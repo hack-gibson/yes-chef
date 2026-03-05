@@ -1,5 +1,8 @@
 # Technical Assessment: Yes Chef, AI Agent for Catering Estimation
 
+## The Project
+Below is a realistic business challenge that mimics real world problems we're trying to solve with ABLE. Your goal is to review the business information and technical considerations to prepare a live, agentic solution solves a real problem for the client. This is not meant to be a fully hardened & tested project and there is no right answer, but an opportunity to see how you think about architecting solutions. **Good luck & have fun.** 
+
 ## Company Overview
 
 **Elegant Foods** is a US-based food catering company specializing in elegant, large-scale West Coast events including high-end weddings, corporate gatherings, product launches, and public celebrations.
@@ -168,9 +171,8 @@ See the provided schema file for the full specification.
 1. Working system that processes the provided menu specification into a priced quote
 2. GitHub repository with a README explaining:
    - How to deploy the backend/API to a cloud environment (step-by-step)
-   - How to run the solution locally for development
    - Your orchestration architecture and why you designed it that way
-   - How state persistence and context compaction work
+   - How you designed for performance (eg state, persistence, summarization, etc)
    - What you would improve with more time
 
 ### Submission
@@ -185,7 +187,7 @@ We're evaluating how you think about building reliable agent systems, not just w
 
 ### What We're NOT Looking For
 
-- Perfect UI polish
+- A UI and polish
 - Comprehensive test coverage — we are not evaluating test completeness. Basic sanity checks are fine, but effort is better spent on architecture, reliability, and deployability.
 - Over-engineered solutions that anticipate every edge case
 
@@ -193,7 +195,7 @@ We're evaluating how you think about building reliable agent systems, not just w
 
 ## A Note on the Data
 
-The Sysco catalog is intentionally imperfect. Some ingredients will match exactly, some will require interpreting the catalog's naming conventions (e.g., "applewood-smoked bacon" in the menu vs. `BACON, SMOKED, APPLEWOOD, THICK CUT` in the catalog), and some won't be there at all. How your system handles each case is part of the evaluation.
+The Sysco catalog is intentionally imperfect. Some ingredients will match exactly, some will require interpreting the catalog's naming conventions (e.g., "applewood-smoked bacon" in the menu vs. `BACON, SMOKED, APPLEWOOD, THICK CUT` in the catalog), and some won't be there at all. How your system handles these cases is something to condsider.
 
 Prices in the catalog are **per case** in food service quantities. 
 ---
